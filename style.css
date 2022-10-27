@@ -406,6 +406,8 @@ nav .fas{
     nav .fas{
         display: block;
         font-size: 24px;
+        width: 90px;
+        height: 90px;
     }
     nav ul{
         background: rgb(1, 56, 1);
@@ -473,6 +475,8 @@ nav .fas{
         margin-top: 27px;
         width: 99%;
     }
+    .work img{
+        width: 300px;
     .content{
         padding: 45px 0;
     }
