@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images\IMG_1052.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/IMG-20221026-WA0047.jpg" type="image/x-icon">
     <title>ONHWeb</title>
 </head>
 <body>
@@ -21,7 +21,6 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="sub"><a href="#">Subscribe</a></li>
             </ul>
             <img class="fas fa-bars" src="icons/icon-menu.svg" onclick="openmenu()">
         </nav>
@@ -70,17 +69,14 @@
                 <div class="list">
                     <h2>Web <br><span>Design</span></h2>
                     <p>I can design your websites with unique, user friendly and eye-catching designs</p>
-                    <a href="#">Learn More</a>
                 </div>
                 <div class="list">
                     <h2>Web <br><span>Development</span></h2>
                     <p>I can develop your brand or personal website.Websites i create are very interactive and responsive</p>
-                    <a href="#">Learn More</a>
                 </div>
                 <div class="list">
                     <h2>Web <span>Hosting & Maintainance</span></h2>
                     <p>I also maintain and Host the websites routinely.</p>
-                    <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
@@ -164,32 +160,32 @@
     <script>
         var sidemeu = document.getElementById("sidemenu");
         function openmenu(){
-            sidemeu.style.right = "180px";
+            sidemeu.style.right = "-50%";
         }
         function closemenu(){
-            sidemeu.style.right = "0px";
+            sidemeu.style.right = "-100%";
         }
     </script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBRzj20bgJez_jqXl2jmFBbRlggqjvnCPlWaERu0N139m9qUpbAUCu2i5bPOkCe_7v/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwBRzj20bgJez_jqXl2jmFBbRlggqjvnCPlWaERu0N139m9qUpbAUCu2i5bPOkCe_7v/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent Succesfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },3000)
-            form.reset()
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </script>
 
 </body>
 </html>

@@ -387,13 +387,13 @@ form input, form textarea{
 nav .fas{
     display: none;
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width:420px){
     *{
-        margin: 0;
+        margin: 0 0;
     }
     #header{
         background-image: url(images/export\ 2.png);
-        background-size: width 300px;
+        background-size: cover;
         background-position: center;
     }
     .header{
@@ -409,11 +409,11 @@ nav .fas{
     }
     nav ul{
         background: rgb(1, 56, 1);
-        position: fixed;
+        position: absolute;
         top: 0;
-        right: 0px;
-        width: 180px;
-        height: 95vh;
+        right: -100%;
+        width: 210px;
+        height: 100vh;
         padding-top: 51px;
         z-index: 2;
         transition: right 0.6s;
@@ -435,6 +435,8 @@ nav .fas{
         top: 39px;
         left: 75%;
         cursor: pointer;
+        width: 90px;
+        height: 90px;
     }
     h1{
         font-size: 39px;
@@ -447,6 +449,7 @@ nav .fas{
     }
     .col1 img{
         width: 300px;
+        height: 450px;
     }
     .col2{
         font-size: 15px;
